@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "ศาลพระเจ้าตากสิน",
+    "nameEn": "King Taksin Shrine",
+    "nameZh": "达信大帝神祠",
+    "category": "สถานที่สำคัญ",
+    "categoryIcon": "🏛️",
+    "distance": "800 เมตร",
+    "travelTime": "10 นาที",
+    "description": "ศาลพระเจ้าตากสินมหาราช สถานที่ศักดิ์สิทธิ์และสัญลักษณ์สำคัญของจังหวัดตาก ชาวตากให้ความเคารพนับถืออย่างสูง",
+    "descriptionEn": "The King Taksin Shrine, a sacred landmark and important symbol of Tak Province, deeply revered by local residents.",
+    "descriptionZh": "达信大帝神祠，达府省重要的神圣地标，深受当地居民敬仰。",
+    "image": "/images/ศาลพระเจ้าตากสิน.JPG",
+    "openHours": "ทุกวัน 06:00-18:00"
+  },
+  {
+    "id": 2,
+    "name": "สะพานแขวนริมแม่น้ำปิง",
+    "nameEn": "Ping River Suspension Bridge",
+    "nameZh": "滨河吊桥",
+    "category": "แลนด์มาร์ก",
+    "categoryIcon": "🌉",
+    "distance": "950 เมตร",
+    "travelTime": "12 นาที",
+    "description": "สะพานแขวนเหล็กโบราณริมแม่น้ำปิง จุดถ่ายรูปยอดนิยม บรรยากาศริมน้ำสวยงามโดยเฉพาะช่วงเย็น",
+    "descriptionEn": "A historic iron suspension bridge along the Ping River, a popular photo spot with beautiful riverside scenery especially in the evening.",
+    "descriptionZh": "横跨平河的古老铁吊桥，热门拍照景点，尤其傍晚时分河边景色迷人。",
+    "image": "/images/สะพานแขวนริมแม่น้ำปิง.JPG",
+    "openHours": "ทุกวัน ตลอด 24 ชั่วโมง"
+  },
+  {
+    "id": 3,
+    "name": "วัดพระบรมธาตุบ้านตาก (หลวงพ่อทันใจ)",
+    "nameEn": "Wat Phra Borommathat Ban Tak",
+    "nameZh": "班塔克佛塔寺",
+    "category": "วัด",
+    "categoryIcon": "🛕",
+    "distance": "27 กิโลเมตร",
+    "travelTime": "30 นาที",
+    "description": "วัดเก่าแก่ศักดิ์สิทธิ์ประจำเมืองตาก ประดิษฐาน \"หลวงพ่อทันใจ\" พระพุทธรูปที่ชาวตากเคารพนับถือ ขอพรแล้วสมใจได้ทันที",
+    "descriptionEn": "An ancient sacred temple housing \"Luang Phor Than Jai,\" a highly revered Buddha image — said to grant wishes instantly.",
+    "descriptionZh": "达府古老神圣寺庙，供奉\"即愿佛\"，据说许愿立刻灵验。",
+    "image": "/images/วัดพระบรมธาตุ.JPG",
+    "openHours": "ทุกวัน 06:00-18:00"
+  },
+  {
+    "id": 4,
+    "name": "ถนนคนเดินริมน้ำปิง",
+    "nameEn": "Ping River Walking Street",
+    "nameZh": "平河步行街",
+    "category": "ถนนคนเดิน",
+    "categoryIcon": "🚶",
+    "distance": "950 เมตร",
+    "travelTime": "12 นาที",
+    "description": "ถนนคนเดินบรรยากาศดีริมแม่น้ำปิง มีร้านอาหาร ของฝาก และสินค้าพื้นเมือง เปิดช่วงเย็นถึงค่ำ เหมาะสำหรับเดินเล่นชิลๆ",
+    "descriptionEn": "A charming riverside walking street along the Ping River with local food, souvenirs, and crafts. Open evenings — perfect for a relaxing stroll.",
+    "descriptionZh": "平河边迷人的步行街，有当地美食、纪念品和手工艺品。傍晚开放，适合悠闲漫步。",
+    "image": "/images/ถนนคนเดิน.jpg",
+    "openHours": "ศุกร์-อาทิตย์ 17:00-22:00"
+  }
+]

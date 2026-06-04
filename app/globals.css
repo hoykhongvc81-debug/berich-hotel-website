@@ -1,0 +1,102 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* โ”€โ”€ Scroll Reveal โ”€โ”€ */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.reveal-right {
+  opacity: 0;
+  transform: translateX(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* โ”€โ”€ Gold Shimmer โ”€โ”€ */
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.gold-shimmer {
+  background: linear-gradient(90deg, #D4AF37 0%, #F5E27D 40%, #D4AF37 60%, #B8941E 100%);
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.gold-divider-shimmer {
+  background: linear-gradient(90deg, transparent 0%, #D4AF37 30%, #F5E27D 50%, #D4AF37 70%, transparent 100%);
+  background-size: 200% auto;
+  animation: shimmer 2.5s linear infinite;
+}
+
+/* โ”€โ”€ Glassmorphism โ”€โ”€ */
+.glass {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(212,175,55,0.2);
+}
+
+:root {
+  --burgundy: #800020;
+  --gold: #D4AF37;
+  --cream: #FDFBF7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FDFBF7;
+  color: #1a1a1a;
+  font-family: var(--font-sarabun), sans-serif;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-burgundy hover:bg-burgundy-dark text-white font-montserrat font-semibold
+           px-8 py-3 transition-all duration-300 tracking-widest uppercase text-sm
+           border border-transparent hover:border-gold;
+  }
+
+  .btn-outline {
+    @apply border border-gold text-gold hover:bg-gold hover:text-white
+           font-montserrat font-semibold px-8 py-3 transition-all duration-300
+           tracking-widest uppercase text-sm;
+  }
+
+  .section-title {
+    @apply font-sarabun text-3xl md:text-5xl text-burgundy mb-4;
+  }
+
+  .section-subtitle {
+    @apply font-montserrat text-gray-500 text-xs tracking-widest uppercase mb-6 md:mb-12;
+  }
+
+  .gold-divider {
+    @apply w-16 h-px bg-gold mx-auto my-4;
+  }
+}
+

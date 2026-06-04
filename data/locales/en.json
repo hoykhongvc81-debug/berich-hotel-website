@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "home": "Home",
+    "rooms": "Rooms",
+    "hotelInfo": "Hotel Info",
+    "gallery": "Gallery",
+    "nearby": "Nearby Places",
+    "contact": "Contact",
+    "book": "Book Now"
+  },
+  "hero": {
+    "welcome": "Welcome to",
+    "tagline": "Minimal Luxury",
+    "desc": "Experience the perfect blend of simplicity and luxury. Rooms designed for your privacy and ultimate comfort.",
+    "bookNow": "Book Now",
+    "viewRooms": "View All Rooms",
+    "scroll": "SCROLL"
+  },
+  "whyUs": {
+    "subtitle": "Why Choose Us",
+    "title": "Why Choose Berich?",
+    "features": {
+      "luxury": { "title": "Minimal Luxury", "desc": "Every detail crafted with care to deliver an exceptional experience." },
+      "location": { "title": "Prime Location", "desc": "Located in the heart of Tak city, convenient access with on-site parking." },
+      "value": { "title": "Value for Money", "desc": "Clean, modern rooms with breakfast included at an unbeatable price." },
+      "safe": { "title": "Secure Booking", "desc": "Safe online booking system with instant confirmation." }
+    },
+    "stats": {
+      "floors": " Floors", "floorsLabel": "Building",
+      "photos": "+", "photosLabel": "Photos",
+      "roomTypes": " Types", "roomTypesLabel": "Room Types",
+      "service": " Hrs", "serviceLabel": "Service"
+    }
+  },
+  "rooms": {
+    "subtitle": "Our Accommodations",
+    "title": "Our Rooms",
+    "desc": "Every room is carefully designed to provide maximum comfort, blending luxury with a simple yet elegant style.",
+    "checkin": "Check-in",
+    "checkout": "Check-out",
+    "breakfast": "Breakfast",
+    "bed": "Bed",
+    "size": "Size",
+    "maxGuests": "Max",
+    "guests": "Guests",
+    "more": "More",
+    "extraBed": "Extra bed available upon request",
+    "bookRoom": "Book This Room",
+    "bookOnline": "Book Online",
+    "allFacilities": "All Facilities",
+    "items": "items"
+  },
+  "hotelInfo": {
+    "subtitle": "About Our Hotel",
+    "title": "Hotel Information",
+    "highlights": {
+      "location": { "title": "Heart of Tak City", "desc": "Located in the center of Tak, close to key landmarks, restaurants, and attractions." },
+      "elevator": { "title": "5 Floors with Elevator", "desc": "5-floor building with 24-hour elevator service for your convenience." },
+      "family": { "title": "Family Friendly", "desc": "Flexible children policy for all families, with a specially designed Family Room." }
+    },
+    "location": {
+      "subtitle": "Location",
+      "title": "Our Location",
+      "desc": "Berich Hotel is located in the heart of Tak city, minutes away from key landmarks. Convenient for both business and leisure travelers.",
+      "openMaps": "Open Google Maps"
+    },
+    "elevator": {
+      "floors": "5 Floors",
+      "label": "Elevator Available",
+      "desc": "Elevator available 24 hours a day for easy access to every floor."
+    },
+    "children": {
+      "subtitle": "Children Policy",
+      "title": "Children Policy",
+      "free": "Stay Free",
+      "freeDetail": "No additional charge",
+      "freeHeight": "Height under 110 cm",
+      "mid": "150 THB",
+      "midHeight": "Height 110 – 130 cm",
+      "midDetail": "Includes extra bedding set, pillow, blanket, towel, and breakfast (shares existing bed)",
+      "adult": "350 THB",
+      "adultHeight": "Height over 130 cm",
+      "adultDetail": "Includes extra bed and breakfast",
+      "note": "* Policy may change. Please contact the hotel to confirm the latest information."
+    }
+  },
+  "gallery": {
+    "subtitle": "Photo Gallery",
+    "title": "Hotel Atmosphere",
+    "desc": "Experience Berich Hotel through real photos from every corner of the property.",
+    "all": "All",
+    "lobby": "Lobby",
+    "surroundings": "Surroundings",
+    "restaurant": "Restaurant",
+    "loadMore": "Load More",
+    "remaining": "remaining"
+  },
+  "nearby": {
+    "subtitle": "Explore Around Us",
+    "title": "Nearby Places",
+    "desc": "Berich Hotel is centrally located in Tak city, close to historical sites, markets, and interesting attractions within easy reach."
+  },
+  "footer": {
+    "cta": {
+      "subtitle": "Ready to Experience",
+      "title": "Book Your Stay Today",
+      "desc": "Enjoy luxury at a special price. Book in advance for exclusive privileges.",
+      "book": "Book Now"
+    },
+    "brand": "Experience perfect Minimal Luxury in the heart of Tak city.",
+    "contact": "Contact Us",
+    "address": "Downtown Tak\nTak Province 63000",
+    "viewMap": "View on Google Maps",
+    "links": "Quick Links",
+    "line": "LINE Official",
+    "lineScan": "Scan QR Code to add friend\nand book via LINE",
+    "copyright": "All rights reserved"
+  }
+}
