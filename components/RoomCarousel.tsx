@@ -31,7 +31,7 @@ export default function RoomCarousel({ images, roomName, badge }: RoomCarouselPr
   if (images.length === 0) return null;
 
   return (
-    <div className="relative overflow-hidden h-64 group/carousel bg-gray-100">
+    <div className="relative overflow-hidden h-72 group/carousel bg-gray-100">
       {/* Images */}
       {images.map((src, i) => (
         <div
@@ -44,7 +44,7 @@ export default function RoomCarousel({ images, roomName, badge }: RoomCarouselPr
             src={src}
             alt={`${roomName} รูปที่ ${i + 1}`}
             fill
-            className="object-cover"
+            className="object-contain"
             sizes="(max-width: 768px) 100vw, 50vw"
             priority={i === 0}
           />
