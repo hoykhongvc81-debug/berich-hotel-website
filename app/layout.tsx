@@ -35,6 +35,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "th_TH",
     siteName: "Berich Hotel",
+    images: [
+      {
+        url: "https://www.berichhotel.com/images/smart-deluxe-1.JPG",
+        width: 1200,
+        height: 630,
+        alt: "ห้อง Smart Deluxe — Berich Hotel เมืองตาก",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
