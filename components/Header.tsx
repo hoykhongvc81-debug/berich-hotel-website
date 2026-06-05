@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useLang } from "@/contexts/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
@@ -37,9 +38,15 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
         {/* Logo */}
-        <Link href="#home" className="flex flex-col leading-none">
-          <span className="font-sarabun text-2xl font-bold text-burgundy tracking-wider">BERICH</span>
-          <span className="font-sarabun text-[10px] tracking-[0.35em] text-gold uppercase">Hotel</span>
+        <Link href="#home" className="flex items-center">
+          <Image
+            src="/images/Logo.png"
+            alt="Berich Hotel"
+            width={180}
+            height={72}
+            className={`h-16 w-auto object-contain transition-all duration-300 ${scrolled ? "brightness-75" : "brightness-0 invert"}`}
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}

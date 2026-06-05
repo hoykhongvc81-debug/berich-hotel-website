@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import FloatingLine from "@/components/FloatingLine";
+import VideoSection from "@/components/VideoSection";
 import FloatingCall from "@/components/FloatingCall";
 import Hero from "@/components/Hero";
 import WhyUs from "@/components/WhyUs";
@@ -15,6 +16,7 @@ export default function Home() {
       <Header />
       <Hero />
       <WhyUs />
+      <VideoSection />
       <Rooms />
       <HotelInfo />
       <Gallery />

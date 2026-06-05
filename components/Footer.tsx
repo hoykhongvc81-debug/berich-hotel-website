@@ -40,8 +40,13 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="mb-4">
-            <p className="font-sarabun text-3xl font-bold text-white tracking-wider">BERICH</p>
-            <p className="font-sarabun text-[10px] tracking-[0.4em] text-gold uppercase">Hotel</p>
+            <Image
+              src="/images/Logo.png"
+              alt="Berich Hotel"
+              width={220}
+              height={88}
+              className="h-24 w-auto object-contain brightness-0 invert mb-2"
+            />
           </div>
           <div className="w-10 h-px bg-gold mb-4" />
           <p className="font-sarabun text-white/50 text-sm leading-relaxed mb-5">{t.footer.brand}</p>
