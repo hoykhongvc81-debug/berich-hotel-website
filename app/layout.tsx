@@ -29,18 +29,18 @@ export const metadata: Metadata = {
     "จองโรงแรมตาก",
   ],
   openGraph: {
-    title: "Berich Hotel — Minimal Luxury in Bangkok",
+    title: "Berich Hotel — Minimal Luxury ใจกลางเมืองตาก จังหวัดตาก",
     description:
-      "สัมผัสประสบการณ์ความหรูหราในสไตล์ Minimal Luxury ที่ Berich Hotel กรุงเทพฯ",
+      "โรงแรม Berich สไตล์ Minimal Luxury ใจกลางเมืองตาก จังหวัดตาก ห้องพักหรูรวมอาหารเช้า ใกล้ศาลพระเจ้าตากสินและสะพานแขวนริมแม่น้ำปิง",
     type: "website",
     locale: "th_TH",
     siteName: "Berich Hotel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Berich Hotel — Minimal Luxury in Bangkok",
+    title: "Berich Hotel — Minimal Luxury ใจกลางเมืองตาก จังหวัดตาก",
     description:
-      "สัมผัสประสบการณ์ความหรูหราในสไตล์ Minimal Luxury ที่ Berich Hotel กรุงเทพฯ",
+      "โรงแรม Berich สไตล์ Minimal Luxury ใจกลางเมืองตาก จังหวัดตาก ห้องพักหรูรวมอาหารเช้า ใกล้ศาลพระเจ้าตากสินและสะพานแขวนริมแม่น้ำปิง",
   },
   robots: {
     index: true,
