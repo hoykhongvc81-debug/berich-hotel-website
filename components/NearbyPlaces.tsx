@@ -26,12 +26,12 @@ function AttractionCard({ place, lang }: { place: Attraction; lang: string }) {
   const desc = lang === "en" ? (place.descriptionEn ?? place.description) : lang === "zh" ? (place.descriptionZh ?? place.description) : place.description;
   return (
     <div className="group bg-white shadow-luxury hover:shadow-luxury-hover transition-all duration-400 overflow-hidden border border-gray-100 hover:border-gold/30">
-      <div className="relative h-44 overflow-hidden">
+      <div className="relative h-56 overflow-hidden">
         <Image
           src={place.image}
           alt={place.name}
           fill
-          className="object-cover transition-transform duration-700 group-hover:scale-105"
+          className="object-contain transition-transform duration-700 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, 33vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
