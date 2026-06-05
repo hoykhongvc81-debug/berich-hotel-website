@@ -8,6 +8,7 @@ import Rooms from "@/components/Rooms";
 import HotelInfo from "@/components/HotelInfo";
 import Gallery from "@/components/Gallery";
 import NearbyPlaces from "@/components/NearbyPlaces";
+import TakCity from "@/components/TakCity";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <HotelInfo />
       <Gallery />
       <NearbyPlaces />
+      <TakCity />
       <Footer />
       <FloatingLine />
       <FloatingCall />
