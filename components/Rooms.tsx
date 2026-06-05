@@ -180,7 +180,7 @@ function RoomCard({ room }: { room: Room }) {
         {showModal && <FeaturesModal room={room} onClose={() => setShowModal(false)} />}
         <p className="font-sarabun text-[11px] text-gray-400 italic mb-5">* {extraBed}</p>
 
-        <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="btn-primary text-center text-xs py-3 w-full">
+        <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="btn-primary text-center text-xs py-3 w-full mt-auto">
           {t.rooms.bookRoom}
         </a>
       </div>
