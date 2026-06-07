@@ -10,6 +10,7 @@ import Gallery from "@/components/Gallery";
 import NearbyPlaces from "@/components/NearbyPlaces";
 import PriceTable from "@/components/PriceTable";
 import Reviews from "@/components/Reviews";
+import FAQ from "@/components/FAQ";
 import TakCity from "@/components/TakCity";
 import Footer from "@/components/Footer";
 
@@ -23,6 +24,7 @@ export default function Home() {
       <Rooms />
       <PriceTable />
       <Reviews />
+      <FAQ />
       <HotelInfo />
       <Gallery />
       <NearbyPlaces />
