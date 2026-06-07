@@ -9,7 +9,6 @@ const reviews = [
     name: "Natthaseth Kitkunee",
     badge: "Local Guide",
     rating: 5,
-    date: "3 เดือนที่แล้ว",
     text: "ที่พักโคตรดี ราคาถูกมาก สำหรับในราคานี้ ห้องกว้างใหญ่ เตียงใหญ่นอนสบาย ห้องน้ำสะอาด ไม่มีกลิ่น พนักงานบริการดี ให้คำแนะนำดี พูดจาน่ารัก อาหารเช้าอร่อย แนะนำเลย 👍👍",
     lang: "th",
   },
@@ -17,7 +16,6 @@ const reviews = [
     name: "ภูวนัย แสวงบุญ",
     badge: "",
     rating: 5,
-    date: "3 เดือนที่แล้ว",
     text: "ห้องพักกว้าง เตียงใหญ่นอนสบาย ห้องน้ำสะอาด กว้าง อยู่ในตัวเมืองตาก มีอาหารเช้าห้องอาหารตกแต่งสวยงาม แนะนำครับ มาพักอีกแน่นอน",
     lang: "th",
   },
@@ -25,7 +23,6 @@ const reviews = [
     name: "Jessica",
     badge: "",
     rating: 5,
-    date: "4 months ago",
     text: "I was really impressed with the service of the staffs and the vibes of the hotel. Both single and double bed rooms are pretty big, comfortable and very clean. The location is quite central so it is very easy to find from the main road.",
     lang: "en",
   },
@@ -33,7 +30,6 @@ const reviews = [
     name: "ภารดี รุ่งรังษี",
     badge: "",
     rating: 5,
-    date: "3 เดือนที่แล้ว",
     text: "พักตากครั้งแรก มาเข้าพักจริง คือดีม๊ากกกกก สะอาดมากกก ห้องกว้างมากก เตียงอย่างกว้าง พัก 2 คน แต่เตียงนอนได้ 4 คนสบายๆ เดินทางรอบหน้า ขอเลือกพักที่นี้แน่นอน 10000/10 และพนักงานบริการดูแลดีมาก",
     lang: "th",
   },
@@ -41,8 +37,14 @@ const reviews = [
     name: "MoowI KL.",
     badge: "",
     rating: 5,
-    date: "4 เดือนที่แล้ว",
     text: "ประทับใจการให้บริการของน้องๆพนักงานมาก น้ำเสียงน่ารัก ให้บริการด้วยท่าทางนอบน้อม จริงใจ ยิ้มสวย ห้องพักกว้างมากทั้งเตียงนอนก็กว้าง นุ่ม สะอาด ถ้าต้องไปแวะพักที่ตากอีก จะเลือกโรงแรมนี้ซ้ำแน่นอน",
+    lang: "th",
+  },
+  {
+    name: "Apiwich Vijitpokin",
+    badge: "Local Guide",
+    rating: 5,
+    text: "เดินทางจากเชียงใหม่กลับกรุงเทพ แวะนอนที่ตากก่อน เลยมานอนที่ Berich hotel เลือกเป็นห้อง 3 เตียง ห้องกว้างนอนสบาย โรงแรมอยู่ใจกลางเมือง มีที่จอดรถ อาหารเช้าเป็นคูปองให้เลือก มีข้าวต้ม ข้าวกระเพราไก่ ไข่ดาวไส้กรอก เหมาะสำหรับนอนพักกลางทางครับ",
     lang: "th",
   },
 ];
@@ -116,12 +118,9 @@ export default function Reviews() {
                   <Avatar name={r.name} />
                   <div className="flex-1 min-w-0">
                     <p className="font-sarabun font-semibold text-gray-900 text-sm truncate">{r.name}</p>
-                    <div className="flex items-center gap-2">
-                      {r.badge && (
-                        <span className="font-sarabun text-[10px] text-burgundy bg-burgundy/5 px-2 py-0.5 rounded-full">{r.badge}</span>
-                      )}
-                      <span className="font-sarabun text-[11px] text-gray-400">{r.date}</span>
-                    </div>
+                    {r.badge && (
+                      <span className="font-sarabun text-[10px] text-burgundy bg-burgundy/5 px-2 py-0.5 rounded-full">{r.badge}</span>
+                    )}
                   </div>
                   {/* Google Icon */}
                   <svg className="w-5 h-5 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none">
