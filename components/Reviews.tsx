@@ -47,6 +47,27 @@ const reviews = [
     text: "เดินทางจากเชียงใหม่กลับกรุงเทพ แวะนอนที่ตากก่อน เลยมานอนที่ Berich hotel เลือกเป็นห้อง 3 เตียง ห้องกว้างนอนสบาย โรงแรมอยู่ใจกลางเมือง มีที่จอดรถ อาหารเช้าเป็นคูปองให้เลือก มีข้าวต้ม ข้าวกระเพราไก่ ไข่ดาวไส้กรอก เหมาะสำหรับนอนพักกลางทางครับ",
     lang: "th",
   },
+  {
+    name: "ดั้นด้น ไป",
+    badge: "Local Guide",
+    rating: 5,
+    text: "ห้องพักและห้องน้ำกว้างมากกก น้ำไหลแรง wifi ดี ใกล้สวนสาธารณะ อาหารเช้าดีมีบริการ พนักงานพูดจาบริการดีมาก",
+    lang: "th",
+  },
+  {
+    name: "B Mass",
+    badge: "Local Guide",
+    rating: 5,
+    text: "1. นอนสบายมาก เตียงกว้างมาก นุ่ม\n2. ในห้องมีพื้นที่สำหรับทำงาน\n3. ห้องน้ำสะอาด\n4. เดินไปถนนคนเดินริมปิงได้ ฟีลต่างประเทศ",
+    lang: "th",
+  },
+  {
+    name: "Hnin Yee Htwe",
+    badge: "Local Guide",
+    rating: 5,
+    text: "The room is so clean & spacious. It's very pleasant to stay here. The staffs are very friendly & easy to communicate.",
+    lang: "en",
+  },
 ];
 
 function StarRating({ count }: { count: number }) {
@@ -135,7 +156,7 @@ export default function Reviews() {
                 <StarRating count={r.rating} />
 
                 {/* Text */}
-                <p className="font-sarabun text-gray-600 text-sm leading-relaxed mt-3 flex-1">
+                <p className="font-sarabun text-gray-600 text-sm leading-relaxed mt-3 flex-1 whitespace-pre-line">
                   "{r.text}"
                 </p>
               </div>
