@@ -20,10 +20,10 @@
     "subtitle": "Why Choose Us",
     "title": "为什么选择 Berich？",
     "features": {
-      "luxury": { "title": "简约奢华", "desc": "精心设计每一个细节，为您提供卓越的体验。" },
-      "location": { "title": "优越地段", "desc": "位于达府市中心，交通便利，设有停车场。" },
+      "luxury": { "title": "简约奢华", "desc": "精心设计每一个细节，为您提供超越期待的卓越住宿体验。" },
+      "location": { "title": "优越地段", "desc": "位于达府市中心，交通便利，设有停车场，方便所有房客使用。" },
       "value": { "title": "物超所值", "desc": "干净现代的客房含早餐，价格实惠，让您流连忘返。" },
-      "safe": { "title": "安全预订", "desc": "安全的在线预订系统，即时确认。" }
+      "safe": { "title": "安全预订", "desc": "安全的在线预订系统，即时确认，无隐藏费用。" }
     },
     "stats": {
       "floors": "层", "floorsLabel": "楼层",
@@ -35,7 +35,7 @@
   "rooms": {
     "subtitle": "Our Accommodations",
     "title": "我们的客房",
-    "desc": "每间客房都精心设计，提供最高舒适度，融合了简约而珍贵的奢华风格。",
+    "desc": "每间客房都精心设计，提供最高舒适度，融合了简约而珍贵的奢华风格，历久弥新。",
     "checkin": "入住时间",
     "checkout": "退房时间",
     "breakfast": "早餐",
@@ -54,20 +54,20 @@
     "subtitle": "About Our Hotel",
     "title": "酒店信息",
     "highlights": {
-      "location": { "title": "达府市中心", "desc": "位于达府市中心，毗邻主要景点、餐厅和旅游景区。" },
-      "elevator": { "title": "5层楼配电梯", "desc": "5层建筑配备24小时电梯服务，方便您上下楼层。" },
+      "location": { "title": "达府市中心", "desc": "位于达府市中心，毗邻主要景点、餐厅和旅游景区，出行极为便利。" },
+      "elevator": { "title": "5层楼配电梯", "desc": "5层建筑配备24小时电梯服务，为您提供最大便利。" },
       "family": { "title": "适合家庭出行", "desc": "灵活的儿童政策，适合所有家庭，并提供专为儿童设计的家庭房。" }
     },
     "location": {
       "subtitle": "Location",
       "title": "我们的位置",
-      "desc": "Berich酒店位于达府市中心，距主要景点仅需几分钟车程，适合商务和休闲旅客。",
+      "desc": "Berich酒店位于达府市中心，距主要景点仅需几分钟路程，适合商务和休闲旅客。",
       "openMaps": "打开谷歌地图"
     },
     "elevator": {
       "floors": "5层楼",
       "label": "配备电梯",
-      "desc": "电梯全天24小时运行，方便您前往各楼层。"
+      "desc": "电梯全天24小时运行，让您轻松舒适地前往各楼层。"
     },
     "children": {
       "subtitle": "Children Policy",
@@ -87,10 +87,10 @@
   "gallery": {
     "subtitle": "Photo Gallery",
     "title": "酒店实景",
-    "desc": "通过真实照片感受 Berich Hotel 每个角落的氛围。",
+    "desc": "通过真实照片感受 Berich Hotel 每个角落的氛围与魅力。",
     "all": "全部",
     "lobby": "大厅",
-    "surroundings": "周边",
+    "surroundings": "周边环境",
     "restaurant": "餐厅",
     "loadMore": "加载更多",
     "remaining": "张剩余"
@@ -98,7 +98,7 @@
   "nearby": {
     "subtitle": "Explore Around Us",
     "title": "周边景点",
-    "desc": "Berich Hotel 位于达府市中心，毗邻历史景点、市场和有趣景区，交通便利。"
+    "desc": "Berich Hotel 位于达府市中心，毗邻历史景点、市场和有趣景区，交通便利，近在咫尺。"
   },
   "footer": {
     "cta": {
@@ -107,9 +107,9 @@
       "desc": "以优惠价格享受奢华体验，提前预订享受专属特权。",
       "book": "立即预订"
     },
-    "brand": "在达府市中心体验完美的简约奢华。",
+    "brand": "在达府市中心体验完美的简约奢华住宿体验。",
     "contact": "联系我们",
-    "address": "达府市中心\n达府府 63000",
+    "address": "2/4 马哈泰班伦路\n农卢昂，孟达府区\n达府府 63000",
     "viewMap": "查看谷歌地图",
     "links": "快速链接",
     "line": "LINE 官方账号",

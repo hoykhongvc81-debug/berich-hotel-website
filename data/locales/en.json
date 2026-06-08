@@ -20,10 +20,10 @@
     "subtitle": "Why Choose Us",
     "title": "Why Choose Berich?",
     "features": {
-      "luxury": { "title": "Minimal Luxury", "desc": "Every detail crafted with care to deliver an exceptional experience." },
-      "location": { "title": "Prime Location", "desc": "Located in the heart of Tak city, convenient access with on-site parking." },
-      "value": { "title": "Value for Money", "desc": "Clean, modern rooms with breakfast included at an unbeatable price." },
-      "safe": { "title": "Secure Booking", "desc": "Safe online booking system with instant confirmation." }
+      "luxury": { "title": "Minimal Luxury", "desc": "Every detail crafted with care to deliver an exceptional experience beyond expectations." },
+      "location": { "title": "Prime Location", "desc": "Located in the heart of Tak city, easily accessible with on-site parking for all guests." },
+      "value": { "title": "Value for Money", "desc": "Clean, modern rooms with breakfast included — at a price that keeps you coming back." },
+      "safe": { "title": "Secure Booking", "desc": "Safe online booking system with instant confirmation and no hidden fees." }
     },
     "stats": {
       "floors": " Floors", "floorsLabel": "Building",
@@ -35,7 +35,7 @@
   "rooms": {
     "subtitle": "Our Accommodations",
     "title": "Our Rooms",
-    "desc": "Every room is carefully designed to provide maximum comfort, blending luxury with a simple yet elegant style.",
+    "desc": "Every room is carefully designed to provide maximum comfort, blending luxury with a simple yet elegant style that stands the test of time.",
     "checkin": "Check-in",
     "checkout": "Check-out",
     "breakfast": "Breakfast",
@@ -54,20 +54,20 @@
     "subtitle": "About Our Hotel",
     "title": "Hotel Information",
     "highlights": {
-      "location": { "title": "Heart of Tak City", "desc": "Located in the center of Tak, close to key landmarks, restaurants, and attractions." },
-      "elevator": { "title": "5 Floors with Elevator", "desc": "5-floor building with 24-hour elevator service for your convenience." },
+      "location": { "title": "Heart of Tak City", "desc": "Located in the center of Tak, close to key landmarks, restaurants, and tourist attractions." },
+      "elevator": { "title": "5 Floors with Elevator", "desc": "5-floor building with 24-hour elevator service for your ultimate convenience." },
       "family": { "title": "Family Friendly", "desc": "Flexible children policy for all families, with a specially designed Family Room." }
     },
     "location": {
       "subtitle": "Location",
       "title": "Our Location",
-      "desc": "Berich Hotel is located in the heart of Tak city, minutes away from key landmarks. Convenient for both business and leisure travelers.",
+      "desc": "Berich Hotel is located in the heart of Tak city, just minutes from key landmarks. Ideal for both business travelers and tourists.",
       "openMaps": "Open Google Maps"
     },
     "elevator": {
       "floors": "5 Floors",
       "label": "Elevator Available",
-      "desc": "Elevator available 24 hours a day for easy access to every floor."
+      "desc": "Elevator available 24 hours a day for easy and comfortable access to every floor."
     },
     "children": {
       "subtitle": "Children Policy",
@@ -98,7 +98,7 @@
   "nearby": {
     "subtitle": "Explore Around Us",
     "title": "Nearby Places",
-    "desc": "Berich Hotel is centrally located in Tak city, close to historical sites, markets, and interesting attractions within easy reach."
+    "desc": "Berich Hotel is centrally located in Tak city, close to historical sites, markets, and interesting attractions — all within easy reach."
   },
   "footer": {
     "cta": {
@@ -107,13 +107,13 @@
       "desc": "Enjoy luxury at a special price. Book in advance for exclusive privileges.",
       "book": "Book Now"
     },
-    "brand": "Experience perfect Minimal Luxury in the heart of Tak city.",
+    "brand": "Experience perfect Minimal Luxury in the heart of Tak city, Tak Province.",
     "contact": "Contact Us",
-    "address": "Downtown Tak\nTak Province 63000",
+    "address": "2/4 Mahadthai Bamrung Rd.\nNong Luang, Mueang Tak\nTak Province 63000",
     "viewMap": "View on Google Maps",
     "links": "Quick Links",
     "line": "LINE Official",
-    "lineScan": "Scan QR Code to add friend\nand book via LINE",
+    "lineScan": "Scan QR Code to add us as friend\nand book or inquire via LINE",
     "copyright": "All rights reserved"
   }
 }
