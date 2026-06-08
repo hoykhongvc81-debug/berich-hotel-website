@@ -1,7 +1,5 @@
 import Header from "@/components/Header";
-import FloatingLine from "@/components/FloatingLine";
 import VideoSection from "@/components/VideoSection";
-import FloatingCall from "@/components/FloatingCall";
 import Hero from "@/components/Hero";
 import WhyUs from "@/components/WhyUs";
 import Rooms from "@/components/Rooms";
@@ -30,8 +28,6 @@ export default function Home() {
       <NearbyPlaces />
       <TakCity />
       <Footer />
-      <FloatingLine />
-      <FloatingCall />
     </main>
   );
 }
