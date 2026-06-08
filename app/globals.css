@@ -100,27 +100,3 @@ body {
   }
 }
 
-/* ── Print Styles ── */
-@media print {
-  .no-print { display: none !important; }
-  .print-only { display: block !important; }
-
-  body { background: white; }
-
-  #booking-document {
-    margin: 0;
-    padding: 20px;
-    box-shadow: none;
-    max-width: 100%;
-  }
-
-  @page {
-    size: A4;
-    margin: 10mm;
-  }
-}
-
-.print-only {
-  display: none;
-}
-
