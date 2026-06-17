@@ -16,7 +16,6 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-
       {/* Fallback image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000"
@@ -38,14 +37,12 @@ export default function Hero() {
         <source src="/video/hero.mp4" type="video/mp4" />
       </video>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/75 z-10" />
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold to-transparent opacity-60 z-10" />
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold to-transparent opacity-60 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold to-transparent opacity-60" />
+      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold to-transparent opacity-60" />
 
-      {/* Content */}
-      <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
-        <p className="font-sarabun text-gold text-xs tracking-[0.4em] uppercase mb-6 opacity-90 animate-fade-in">
+      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+        <p className="font-sarabun text-gold text-xs tracking-[0.4em] uppercase mb-6 opacity-90">
           {t.hero.welcome}
         </p>
         <h1 className="font-sarabun text-5xl sm:text-6xl md:text-8xl text-white font-bold mb-4 leading-tight">
@@ -73,8 +70,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce z-20">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce z-10">
         <span className="font-sarabun text-white/50 text-[10px] tracking-widest uppercase">{t.hero.scroll}</span>
         <div className="w-px h-8 bg-gradient-to-b from-white/50 to-transparent" />
       </div>
