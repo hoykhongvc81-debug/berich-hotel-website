@@ -1,61 +1,38 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { useLang } from "@/contexts/LanguageContext";
 
 const BOOKING_URL = "https://live.ipms247.com/booking/book-rooms-berichhotel";
-const VIDEO_ID = "_I47werrJP8";
-const VIDEO_SRC = `https://www.youtube.com/embed/${VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${VIDEO_ID}&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3`;
 
 export default function Hero() {
   const { t } = useLang();
-  const iframeRef = useRef<HTMLIFrameElement>(null);
   const [videoReady, setVideoReady] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-    setIsMobile(window.innerWidth < 768 || /Mobi|Android/i.test(navigator.userAgent));
-  }, []);
 
   return (
     <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
 
-      {/* Fallback image — always behind, shown on mobile or before video loads */}
+      {/* Fallback image — shown before video loads */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000"
         style={{
           backgroundImage: "url('/images/hero.JPG')",
-          backgroundAttachment: "fixed",
-          opacity: videoReady && !isMobile ? 0 : 1,
+          opacity: videoReady ? 0 : 1,
         }}
       />
 
-      {/* YouTube video background — desktop only, after mount */}
-      {mounted && !isMobile && (
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <iframe
-            ref={iframeRef}
-            src={VIDEO_SRC}
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-            onLoad={() => setTimeout(() => setVideoReady(true), 1500)}
-            className="absolute"
-            style={{
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              width: "calc(100vh * 16 / 9)",
-              minWidth: "100%",
-              height: "calc(100vw * 9 / 16)",
-              minHeight: "100%",
-              opacity: videoReady ? 1 : 0,
-              transition: "opacity 1.5s ease",
-            }}
-          />
-        </div>
-      )}
+      {/* MP4 video background — works on all devices */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        onCanPlay={() => setVideoReady(true)}
+        className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
+        style={{ opacity: videoReady ? 1 : 0 }}
+      >
+        <source src="/videos/hero.mp4" type="video/mp4" />
+      </video>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/75 z-10" />
