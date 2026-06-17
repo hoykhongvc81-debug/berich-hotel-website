@@ -31,6 +31,7 @@ export default function Hero() {
         muted
         loop
         playsInline
+        preload="none"
         className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
         style={{ opacity: showVideo ? 1 : 0 }}
       >
