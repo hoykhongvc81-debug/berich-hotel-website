@@ -1,37 +1,30 @@
 "use client";
 
-import { useState } from "react";
 import { useLang } from "@/contexts/LanguageContext";
 
 const BOOKING_URL = "https://live.ipms247.com/booking/book-rooms-berichhotel";
 
 export default function Hero() {
   const { t } = useLang();
-  const [videoReady, setVideoReady] = useState(false);
 
   return (
     <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
 
-      {/* Fallback image — shown before video loads */}
+      {/* Fallback image — always behind video */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000"
-        style={{
-          backgroundImage: "url('/images/hero.JPG')",
-          opacity: videoReady ? 0 : 1,
-        }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/images/hero.JPG')" }}
       />
 
-      {/* MP4 video background — works on all devices */}
+      {/* MP4 video background */}
       <video
         autoPlay
         muted
         loop
         playsInline
-        onCanPlay={() => setVideoReady(true)}
-        className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
-        style={{ opacity: videoReady ? 1 : 0 }}
+        className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="/videos/hero.mp4" type="video/mp4" />
+        <source src="/video/hero.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay */}
