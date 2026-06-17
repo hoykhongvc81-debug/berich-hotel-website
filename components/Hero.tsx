@@ -1,19 +1,29 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { useLang } from "@/contexts/LanguageContext";
 
 const BOOKING_URL = "https://live.ipms247.com/booking/book-rooms-berichhotel";
 
 export default function Hero() {
   const { t } = useLang();
+  const [showVideo, setShowVideo] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowVideo(true), 3000);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
 
-      {/* Fallback image — always behind video */}
+      {/* Fallback image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/hero.JPG')" }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000"
+        style={{
+          backgroundImage: "url('/images/hero.JPG')",
+          opacity: showVideo ? 0 : 1,
+        }}
       />
 
       {/* MP4 video background */}
@@ -22,7 +32,8 @@ export default function Hero() {
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
+        style={{ opacity: showVideo ? 1 : 0 }}
       >
         <source src="/video/hero.mp4" type="video/mp4" />
       </video>
