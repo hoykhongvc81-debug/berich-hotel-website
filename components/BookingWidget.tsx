@@ -76,7 +76,7 @@ export default function BookingWidget() {
         }`}
       >
         <div className="w-full bg-white/95 backdrop-blur-xl border-t border-gold/30 shadow-[0_-8px_40px_rgba(0,0,0,0.12)]">
-          <div className="max-w-6xl mx-auto px-6 py-4 flex items-center gap-6">
+          <div className="max-w-6xl mx-auto px-6 pr-24 py-4 flex items-center gap-6">
             {/* Label */}
             <div className="shrink-0">
               <p className="font-sarabun text-[10px] tracking-[0.3em] uppercase text-gold mb-0.5">Reserve</p>
