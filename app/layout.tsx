@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { Playfair_Display, Sarabun } from "next/font/google";
+import LuxuryCursor from "@/components/LuxuryCursor";
+import BookingWidget from "@/components/BookingWidget";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -131,6 +133,8 @@ export default function RootLayout({
         {/* Google Tag Manager (noscript) */}
         <noscript dangerouslySetInnerHTML={{ __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8VNMMV" height="0" width="0" style="display:none;visibility:hidden"></iframe>` }} />
         {/* End Google Tag Manager (noscript) */}
+        <LuxuryCursor />
+        <BookingWidget />
         <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>
