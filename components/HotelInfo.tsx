@@ -6,12 +6,6 @@ import { useLang } from "@/contexts/LanguageContext";
 export default function HotelInfo() {
   const { t } = useLang();
 
-  const childPolicies = [
-    { icon: "/images/babyicon-1.png", height: t.hotelInfo.children.freeHeight, label: t.hotelInfo.children.free, detail: t.hotelInfo.children.freeDetail, color: "text-emerald-600", bg: "bg-emerald-50 border-emerald-100" },
-    { icon: "/images/babyicon-2.png", height: t.hotelInfo.children.midHeight, label: t.hotelInfo.children.mid, detail: t.hotelInfo.children.midDetail, color: "text-gold-dark", bg: "bg-amber-50 border-amber-100" },
-    { icon: "/images/babyicon-3.png", height: t.hotelInfo.children.adultHeight, label: t.hotelInfo.children.adult, detail: t.hotelInfo.children.adultDetail, color: "text-burgundy", bg: "bg-red-50 border-red-100" },
-  ];
-
   const highlights = [
     {
       icon: (<svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>),
@@ -99,30 +93,6 @@ export default function HotelInfo() {
               <p className="font-sarabun text-white/70 text-xs leading-relaxed">{t.hotelInfo.elevator.desc}</p>
             </div>
           </div>
-        </div>
-
-        {/* Children Policy */}
-        <div>
-          <div className="text-center mb-10">
-            <p className="font-sarabun text-xs text-gold tracking-widest uppercase mb-2">{t.hotelInfo.children.subtitle}</p>
-            <h3 className="font-sarabun text-3xl text-burgundy">{t.hotelInfo.children.title}</h3>
-            <div className="w-10 h-px bg-gold mx-auto mt-3" />
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
-            {childPolicies.map((p) => (
-              <div key={p.height} className={`border rounded-none p-6 flex flex-col items-center text-center ${p.bg}`}>
-                <div className="w-14 h-14 relative mb-4">
-                  <Image src={p.icon} alt={p.height} fill className="object-contain mix-blend-multiply" />
-                </div>
-                <p className="font-sarabun text-xs text-gray-500 mb-2 tracking-wide">{p.height}</p>
-                <p className={`font-sarabun text-3xl font-bold mb-1 ${p.color}`}>{p.label}</p>
-                <div className="w-8 h-px bg-gray-300 my-3" />
-                <p className="font-sarabun text-gray-500 text-xs leading-relaxed">{p.detail}</p>
-              </div>
-            ))}
-          </div>
-          <p className="font-sarabun text-xs text-gray-400 text-center mt-6 italic">{t.hotelInfo.children.note}</p>
         </div>
 
       </div>

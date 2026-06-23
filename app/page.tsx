@@ -7,6 +7,7 @@ import HotelInfo from "@/components/HotelInfo";
 import Gallery from "@/components/Gallery";
 import NearbyPlaces from "@/components/NearbyPlaces";
 import PriceTable from "@/components/PriceTable";
+import ChildrenPolicy from "@/components/ChildrenPolicy";
 import Reviews from "@/components/Reviews";
 import Amenities from "@/components/Amenities";
 import FAQ from "@/components/FAQ";
@@ -22,6 +23,7 @@ export default function Home() {
       <Amenities />
       <VideoSection />
       <Rooms />
+      <ChildrenPolicy />
       <PriceTable />
       <Reviews />
       <FAQ />
