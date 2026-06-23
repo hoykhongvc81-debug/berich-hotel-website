@@ -19,7 +19,7 @@ const amenities = [
       </svg>
     ),
     label: "Smart TV",
-    desc: "ทุกห้องพัก",
+    desc: "Super/Smart Deluxe",
   },
   {
     icon: (
