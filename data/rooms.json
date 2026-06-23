@@ -51,9 +51,9 @@
     "bed": "เตียงขนาด 6 ฟุต 1 เตียง", "bedEn": "1 King Bed (6 ft)", "bedZh": "1张大床（6英尺）",
     "extraBed": "สามารถเสริมเตียงได้ 1 เตียง", "extraBedEn": "Extra bed available upon request", "extraBedZh": "可加床（1张）",
     "badge": "แนะนำ", "badgeEn": "Recommended", "badgeZh": "推荐",
-    "features": ["Free WiFi","โทรทัศน์","แอร์","ตู้เย็น","เครื่องทำน้ำอุ่น","ไดร์เป่าผม","กาต้มน้ำ","ชามะลิ","โซฟาโยก","น้ำดื่มฟรี 2 ขวด/คืน"],
-    "featuresEn": ["Free WiFi","TV","Air Conditioning","Refrigerator","Water Heater","Hair Dryer","Electric Kettle","Jasmine Tea","Rocking Sofa","2 Free Water Bottles/Night"],
-    "featuresZh": ["免费WiFi","电视","空调","冰箱","热水器","吹风机","电热水壶","茉莉花茶","摇椅沙发","每晚2瓶免费矿泉水"],
+    "features": ["Free WiFi","Smart TV 43\"","แอร์","ตู้เย็น","เครื่องทำน้ำอุ่น","ไดร์เป่าผม","กาต้มน้ำ","ชามะลิ","โซฟาโยก","น้ำดื่มฟรี 2 ขวด/คืน"],
+    "featuresEn": ["Free WiFi","Smart TV 43\"","Air Conditioning","Refrigerator","Water Heater","Hair Dryer","Electric Kettle","Jasmine Tea","Rocking Sofa","2 Free Water Bottles/Night"],
+    "featuresZh": ["免费WiFi","43英寸智能电视","空调","冰箱","热水器","吹风机","电热水壶","茉莉花茶","摇椅沙发","每晚2瓶免费矿泉水"],
     "images": ["/images/super-deluxe-1.JPG","/images/super-deluxe-2.JPG","/images/super-deluxe-3.JPG","/images/super-deluxe-4.JPG","/images/super-deluxe-5.JPG","/images/super-deluxe-6.JPG","/images/super-deluxe-7.JPG"]
   },
   {
