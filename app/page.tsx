@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import VideoSection from "@/components/VideoSection";
 import Hero from "@/components/Hero";
+import AboutSummary from "@/components/AboutSummary";
 import WhyUs from "@/components/WhyUs";
 import Rooms from "@/components/Rooms";
 import HotelInfo from "@/components/HotelInfo";
@@ -19,6 +20,7 @@ export default function Home() {
     <main>
       <Header />
       <Hero />
+      <AboutSummary />
       <WhyUs />
       <Amenities />
       <VideoSection />
