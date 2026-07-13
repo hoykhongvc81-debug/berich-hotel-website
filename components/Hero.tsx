@@ -8,11 +8,23 @@ const BOOKING_URL = "https://live.ipms247.com/booking/book-rooms-berichhotel";
 export default function Hero() {
   const { t } = useLang();
   const [showVideo, setShowVideo] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  // Only load the hero video on desktop — mobile keeps the static hero.JPG
+  // to save bandwidth (the video is the site's largest asset).
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 768px)");
+    const update = () => setIsDesktop(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
 
   useEffect(() => {
+    if (!isDesktop) return;
     const timer = setTimeout(() => setShowVideo(true), 3000);
     return () => clearTimeout(timer);
-  }, []);
+  }, [isDesktop]);
 
   return (
     <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
@@ -25,18 +37,20 @@ export default function Hero() {
         }}
       />
 
-      {/* MP4 video background */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="none"
-        className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
-        style={{ opacity: showVideo ? 1 : 0 }}
-      >
-        <source src="/video/hero.mp4" type="video/mp4" />
-      </video>
+      {/* MP4 video background — desktop only */}
+      {isDesktop && (
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="none"
+          className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
+          style={{ opacity: showVideo ? 1 : 0 }}
+        >
+          <source src="/video/hero.mp4" type="video/mp4" />
+        </video>
+      )}
 
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold to-transparent opacity-60" />
