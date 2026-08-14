@@ -3,6 +3,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import { Playfair_Display, Sarabun } from "next/font/google";
 import LuxuryCursor from "@/components/LuxuryCursor";
 import BookingWidget from "@/components/BookingWidget";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -296,6 +297,7 @@ export default function RootLayout({
         <LuxuryCursor />
         <BookingWidget />
         <LanguageProvider>{children}</LanguageProvider>
+        <Analytics />
       </body>
     </html>
   );
