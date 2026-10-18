@@ -72,7 +72,7 @@ export default function HotelInfo() {
                 </li>
               ))}
             </ul>
-            <a href="https://maps.app.goo.gl/HmpqtwvjTxByjN9EA" target="_blank" rel="noopener noreferrer"
+            <a href="https://maps.app.goo.gl/gyudGaJoEWs7JnbK8" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 mt-5 font-sarabun text-xs text-burgundy border border-burgundy/30 hover:bg-burgundy hover:text-white px-4 py-2.5 transition-all duration-300">
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />

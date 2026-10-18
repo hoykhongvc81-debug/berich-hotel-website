@@ -87,7 +87,7 @@ export default function RootLayout({
       "latitude": 16.8796,
       "longitude": 99.1265
     },
-    "hasMap": "https://maps.app.goo.gl/HmpqtwvjTxByjN9EA",
+    "hasMap": "https://maps.app.goo.gl/gyudGaJoEWs7JnbK8",
     "image": [
       "https://www.berichhotel.com/images/deluxe-king-1.JPG",
       "https://www.berichhotel.com/images/deluxe-twin-1.JPG",
@@ -275,7 +275,7 @@ export default function RootLayout({
     "sameAs": [
       "https://www.facebook.com/Berichhotel",
       "https://lin.ee/vTflxR0",
-      "https://maps.app.goo.gl/HmpqtwvjTxByjN9EA"
+      "https://maps.app.goo.gl/gyudGaJoEWs7JnbK8"
     ]
   };
 
