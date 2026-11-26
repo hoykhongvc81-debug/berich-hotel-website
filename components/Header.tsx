@@ -19,6 +19,7 @@ export default function Header() {
     { label: t.nav.hotelInfo, href: "/#hotel-info" },
     { label: t.nav.gallery, href: "/#gallery" },
     { label: t.nav.nearby, href: "/#nearby" },
+    { label: t.nav.takGuide, href: "/tak-attractions" },
     { label: t.nav.contact, href: "/#contact" },
   ];
 
@@ -50,12 +51,12 @@ export default function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-6">
+        <nav className="hidden lg:flex items-center gap-4 xl:gap-6">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className={`font-sarabun text-xs tracking-widest uppercase transition-colors duration-200 ${
+              className={`font-sarabun text-xs tracking-widest uppercase whitespace-nowrap transition-colors duration-200 ${
                 scrolled ? "text-gray-700 hover:text-burgundy" : "text-white/90 hover:text-gold"
               }`}
             >
