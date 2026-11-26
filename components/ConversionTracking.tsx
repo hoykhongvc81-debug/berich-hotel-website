@@ -25,9 +25,13 @@ function classify(url: string): ContactEvent | null {
   return null;
 }
 
+// Send only to the hotel's own GA4 property, never to other Google tags
+// that may be on the page (e.g. an agency's container).
+export const GA4_ID = "G-C2HQGGX33G";
+
 export function trackContact(event: ContactEvent, linkUrl: string) {
   if (typeof window === "undefined" || typeof window.gtag !== "function") return;
-  window.gtag("event", event, { link_url: linkUrl });
+  window.gtag("event", event, { link_url: linkUrl, send_to: GA4_ID });
 }
 
 /**
