@@ -1,16 +1,15 @@
 "use client";
 
 import ScrollReveal from "@/components/ScrollReveal";
+import { ROOM_PRICES } from "@/lib/rooms";
 
 const BOOKING_URL = "https://live.ipms247.com/booking/book-rooms-berichhotel";
 
-const rooms = [
-  { name: "Deluxe King", nameEn: "DELUXE KING", default: 690, high: 790, peak: 990 },
-  { name: "Deluxe Twin", nameEn: "DELUXE TWIN", default: 790, high: 890, peak: 1090 },
-  { name: "Super Deluxe", nameEn: "SUPER DELUXE", default: 890, high: 990, peak: 1190 },
-  { name: "Smart Deluxe", nameEn: "SMART DELUXE", default: 990, high: 1190, peak: 1290 },
-  { name: "Family Room", nameEn: "FAMILY ROOM", default: 1190, high: 1290, peak: 1390 },
-];
+const rooms = Object.entries(ROOM_PRICES).map(([name, p]) => ({
+  name,
+  nameEn: name.toUpperCase(),
+  ...p,
+}));
 
 const seasons = [
   {

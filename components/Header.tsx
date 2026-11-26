@@ -14,12 +14,12 @@ export default function Header() {
   const { t } = useLang();
 
   const navLinks = [
-    { label: t.nav.home, href: "#home" },
-    { label: t.nav.rooms, href: "#rooms" },
-    { label: t.nav.hotelInfo, href: "#hotel-info" },
-    { label: t.nav.gallery, href: "#gallery" },
-    { label: t.nav.nearby, href: "#nearby" },
-    { label: t.nav.contact, href: "#contact" },
+    { label: t.nav.home, href: "/#home" },
+    { label: t.nav.rooms, href: "/#rooms" },
+    { label: t.nav.hotelInfo, href: "/#hotel-info" },
+    { label: t.nav.gallery, href: "/#gallery" },
+    { label: t.nav.nearby, href: "/#nearby" },
+    { label: t.nav.contact, href: "/#contact" },
   ];
 
   useEffect(() => {
@@ -38,7 +38,7 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
         {/* Logo */}
-        <Link href="#home" className="flex items-center">
+        <Link href="/" className="flex items-center">
           <Image
             src="/images/Logo.png"
             alt="Berich Hotel"

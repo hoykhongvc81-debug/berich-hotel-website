@@ -60,8 +60,11 @@ export default function Hero() {
         <p className="font-sarabun text-gold text-xs tracking-[0.4em] uppercase mb-6 opacity-90">
           {t.hero.welcome}
         </p>
-        <h1 className="font-sarabun text-5xl sm:text-6xl md:text-8xl text-white font-bold mb-4 leading-tight">
-          Berich Hotel
+        <h1 className="font-sarabun text-white mb-4">
+          <span className="block text-5xl sm:text-6xl md:text-8xl font-bold leading-tight">Berich Hotel</span>
+          <span className="block mt-2 text-lg sm:text-xl md:text-2xl font-medium text-white/90 tracking-wide">
+            {t.hero.h1Sub}
+          </span>
         </h1>
         <div className="flex items-center justify-center gap-3 mb-5">
           <span className="h-px w-10 md:w-16 gold-divider-shimmer" />

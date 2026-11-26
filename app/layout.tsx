@@ -25,9 +25,13 @@ const sarabun = Sarabun({
 });
 
 export const metadata: Metadata = {
-  title: "Berich Hotel — Minimal Luxury ใจกลางเมืองตาก",
+  metadataBase: new URL("https://www.berichhotel.com"),
+  title: {
+    default: "โรงแรมตาก Berich Hotel — ที่พักใจกลางเมืองตาก รวมอาหารเช้า",
+    template: "%s | Berich Hotel โรงแรมตาก",
+  },
   description:
-    "โรงแรม Berich สไตล์ Minimal Luxury ใจกลางเมืองตาก ห้องพักหรูพร้อมสิ่งอำนวยความสะดวกครบครัน รวมอาหารเช้า จองห้องพักออนไลน์ได้เลย",
+    "Berich Hotel โรงแรมตากสไตล์ Minimal Luxury ใจกลางเมืองตาก ใกล้ศาลพระเจ้าตากสิน 800 ม. ห้องพัก 32 ตร.ม. รวมอาหารเช้า มีที่จอดรถ ราคาเริ่ม 690 บาท/คืน จองตรงราคาดีที่สุด",
   keywords: [
     "Berich Hotel",
     "โรงแรมตาก",
@@ -37,7 +41,7 @@ export const metadata: Metadata = {
     "จองโรงแรมตาก",
   ],
   openGraph: {
-    title: "Berich Hotel — Minimal Luxury ใจกลางเมืองตาก จังหวัดตาก",
+    title: "โรงแรมตาก Berich Hotel — ที่พักใจกลางเมืองตาก รวมอาหารเช้า",
     description:
       "โรงแรม Berich สไตล์ Minimal Luxury ใจกลางเมืองตาก จังหวัดตาก ห้องพักหรูรวมอาหารเช้า ใกล้ศาลพระเจ้าตากสินและสะพานแขวนริมแม่น้ำปิง",
     type: "website",
@@ -54,7 +58,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Berich Hotel — Minimal Luxury ใจกลางเมืองตาก จังหวัดตาก",
+    title: "โรงแรมตาก Berich Hotel — ที่พักใจกลางเมืองตาก รวมอาหารเช้า",
     description:
       "โรงแรม Berich สไตล์ Minimal Luxury ใจกลางเมืองตาก จังหวัดตาก ห้องพักหรูรวมอาหารเช้า ใกล้ศาลพระเจ้าตากสินและสะพานแขวนริมแม่น้ำปิง",
   },
@@ -101,7 +105,7 @@ export default function RootLayout({
       "https://www.berichhotel.com/images/family-1.JPG",
       "https://www.berichhotel.com/images/gallery/lobby-1.JPG"
     ],
-    "numberOfRooms": "5",
+    "numberOfRooms": 45,
     "checkinTime": "14:00",
     "checkoutTime": "12:00",
     "priceRange": "฿฿",

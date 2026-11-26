@@ -11,10 +11,10 @@ export default function Footer() {
   const { t } = useLang();
 
   const quickLinks = [
-    { label: t.nav.home, href: "#home" },
-    { label: t.nav.rooms, href: "#rooms" },
-    { label: t.nav.hotelInfo, href: "#hotel-info" },
-    { label: t.nav.nearby, href: "#nearby" },
+    { label: t.nav.home, href: "/#home" },
+    { label: t.rooms.allRooms, href: "/rooms" },
+    { label: t.nav.hotelInfo, href: "/#hotel-info" },
+    { label: t.nearby.guide, href: "/tak-attractions" },
     { label: t.nav.book, href: BOOKING_URL, external: true },
     { label: "Facebook", href: FACEBOOK_URL, external: true },
     { label: "LINE Official", href: LINE_URL, external: true },

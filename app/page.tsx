@@ -14,6 +14,11 @@ import Amenities from "@/components/Amenities";
 import FAQ from "@/components/FAQ";
 import TakCity from "@/components/TakCity";
 import Footer from "@/components/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   return (

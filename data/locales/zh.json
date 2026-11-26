@@ -14,7 +14,8 @@
     "desc": "体验简约而珍贵的奢华感受，专为您的私密性和极致舒适而设计的客房。",
     "bookNow": "立即预订",
     "viewRooms": "查看所有客房",
-    "scroll": "向下滚动"
+    "scroll": "向下滚动",
+    "h1Sub": "达府市中心酒店"
   },
   "whyUs": {
     "subtitle": "Why Choose Us",
@@ -48,7 +49,9 @@
     "bookRoom": "预订此房",
     "bookOnline": "在线预订",
     "allFacilities": "全部设施",
-    "items": "项"
+    "items": "项",
+    "details": "查看客房详情",
+    "allRooms": "全部客房与价格"
   },
   "hotelInfo": {
     "subtitle": "About Our Hotel",
@@ -98,7 +101,8 @@
   "nearby": {
     "subtitle": "Explore Around Us",
     "title": "周边景点",
-    "desc": "Berich Hotel 位于达府市中心，毗邻历史景点、市场和有趣景区，交通便利，近在咫尺。"
+    "desc": "Berich Hotel 位于达府市中心，毗邻历史景点、市场和有趣景区，交通便利，近在咫尺。",
+    "guide": "阅读达府旅游指南"
   },
   "footer": {
     "cta": {

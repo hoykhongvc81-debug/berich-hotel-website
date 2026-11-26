@@ -4,6 +4,7 @@ import Image from "next/image";
 import attractionsData from "@/data/attractions.json";
 import ScrollReveal from "@/components/ScrollReveal";
 import { useLang } from "@/contexts/LanguageContext";
+import Link from "next/link";
 
 type Attraction = {
   id: number;
@@ -89,6 +90,11 @@ export default function NearbyPlaces() {
               <AttractionCard place={place} lang={lang} />
             </ScrollReveal>
           ))}
+        </div>
+        <div className="text-center mt-12">
+          <Link href="/tak-attractions" className="btn-outline inline-block text-sm px-8 py-3">
+            {t.nearby.guide}
+          </Link>
         </div>
       </div>
     </section>

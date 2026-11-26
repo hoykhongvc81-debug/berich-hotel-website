@@ -14,7 +14,8 @@
     "desc": "Experience the perfect blend of simplicity and luxury. Rooms designed for your privacy and ultimate comfort.",
     "bookNow": "Book Now",
     "viewRooms": "View All Rooms",
-    "scroll": "SCROLL"
+    "scroll": "SCROLL",
+    "h1Sub": "Hotel in the Heart of Tak City"
   },
   "whyUs": {
     "subtitle": "Why Choose Us",
@@ -48,7 +49,9 @@
     "bookRoom": "Book This Room",
     "bookOnline": "Book Online",
     "allFacilities": "All Facilities",
-    "items": "items"
+    "items": "items",
+    "details": "Room details",
+    "allRooms": "All rooms & rates"
   },
   "hotelInfo": {
     "subtitle": "About Our Hotel",
@@ -98,7 +101,8 @@
   "nearby": {
     "subtitle": "Explore Around Us",
     "title": "Nearby Places",
-    "desc": "Berich Hotel is centrally located in Tak city, close to historical sites, markets, and interesting attractions — all within easy reach."
+    "desc": "Berich Hotel is centrally located in Tak city, close to historical sites, markets, and interesting attractions — all within easy reach.",
+    "guide": "Read our Tak city guide"
   },
   "footer": {
     "cta": {
