@@ -4,6 +4,12 @@ import { Playfair_Display, Sarabun } from "next/font/google";
 import LuxuryCursor from "@/components/LuxuryCursor";
 import BookingWidget from "@/components/BookingWidget";
 import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
+import ConversionTracking from "@/components/ConversionTracking";
+
+// Berich Hotel's own Google tags (owned by the hotel, not the agency)
+const GA4_ID = "G-C2HQGGX33G";
+const GOOGLE_ADS_TAG_ID = "GTM-WRF5RCF5";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -294,6 +300,23 @@ export default function RootLayout({
         {/* Google Tag Manager (noscript) */}
         <noscript dangerouslySetInnerHTML={{ __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8VNMMV" height="0" width="0" style="display:none;visibility:hidden"></iframe>` }} />
         {/* End Google Tag Manager (noscript) */}
+        {/* Google Analytics 4 + Google Ads tag (hotel-owned) */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-tags" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+window.gtag = gtag;
+gtag('js', new Date());
+gtag('config', '${GA4_ID}');`}
+        </Script>
+        <Script
+          src={`https://www.googletagmanager.com/gtm.js?id=${GOOGLE_ADS_TAG_ID}`}
+          strategy="afterInteractive"
+        />
+        <ConversionTracking />
         <LuxuryCursor />
         <BookingWidget />
         <LanguageProvider>{children}</LanguageProvider>

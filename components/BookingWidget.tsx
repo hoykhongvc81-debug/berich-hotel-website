@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { trackContact } from "@/components/ConversionTracking";
 
 const BOOKING_URL = "https://live.ipms247.com/booking/book-rooms-berichhotel";
 
@@ -64,6 +65,7 @@ export default function BookingWidget() {
   );
 
   const handleBook = () => {
+    trackContact("click_booking", BOOKING_URL);
     window.open(BOOKING_URL, "_blank", "noopener,noreferrer");
   };
 
