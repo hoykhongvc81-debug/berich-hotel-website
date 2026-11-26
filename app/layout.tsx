@@ -6,6 +6,7 @@ import BookingWidget from "@/components/BookingWidget";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import ConversionTracking from "@/components/ConversionTracking";
+import FloatingContact from "@/components/FloatingContact";
 import { GA4_ID } from "@/lib/tracking";
 
 // Berich Hotel's own Google tags (owned by the hotel, not the agency)
@@ -68,12 +69,8 @@ export const metadata: Metadata = {
     follow: true,
   },
   verification: {
-    // [0] = agency's Search Console (remove after contract ends 6 Dec 2026)
-    // [1] = hotel-owned Search Console
-    google: [
-      "z-l4DLe87fXmjDL61xN8nQJxJeiHeNuUS33AIdGW3YU",
-      "itTVMFrAuLZ4tLWXRWrNwTGNscKb6-syGwfhfBkwyVU",
-    ],
+    // Hotel-owned Search Console
+    google: "itTVMFrAuLZ4tLWXRWrNwTGNscKb6-syGwfhfBkwyVU",
   },
 };
 
@@ -297,18 +294,12 @@ export default function RootLayout({
   return (
     <html lang="th" className={`${playfair.variable} ${sarabun.variable}`}>
       <head>
-        {/* Google Tag Manager */}
-        <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-K8VNMMV');` }} />
-        {/* End Google Tag Manager */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
         />
       </head>
       <body className="font-sarabun antialiased">
-        {/* Google Tag Manager (noscript) */}
-        <noscript dangerouslySetInnerHTML={{ __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8VNMMV" height="0" width="0" style="display:none;visibility:hidden"></iframe>` }} />
-        {/* End Google Tag Manager (noscript) */}
         {/* Google Analytics 4 + Google Ads tag (hotel-owned) */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}
@@ -328,7 +319,10 @@ gtag('config', '${GA4_ID}');`}
         <ConversionTracking />
         <LuxuryCursor />
         <BookingWidget />
-        <LanguageProvider>{children}</LanguageProvider>
+        <LanguageProvider>
+          {children}
+          <FloatingContact />
+        </LanguageProvider>
         <Analytics />
       </body>
     </html>
