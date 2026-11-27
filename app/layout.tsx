@@ -67,7 +67,12 @@ export const metadata: Metadata = {
     follow: true,
   },
   verification: {
-    google: "z-l4DLe87fXmjDL61xN8nQJxJeiHeNuUS33AIdGW3YU",
+    // [0] = agency's Search Console (remove after contract ends 6 Dec 2026)
+    // [1] = hotel-owned Search Console
+    google: [
+      "z-l4DLe87fXmjDL61xN8nQJxJeiHeNuUS33AIdGW3YU",
+      "itTVMFrAuLZ4tLWXRWrNwTGNscKb6-syGwfhfBkwyVU",
+    ],
   },
 };
 
