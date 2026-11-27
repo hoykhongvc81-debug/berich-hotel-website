@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { GA4_ID } from "@/lib/tracking";
 
 declare global {
   interface Window {
@@ -27,7 +28,6 @@ function classify(url: string): ContactEvent | null {
 
 // Send only to the hotel's own GA4 property, never to other Google tags
 // that may be on the page (e.g. an agency's container).
-export const GA4_ID = "G-C2HQGGX33G";
 
 export function trackContact(event: ContactEvent, linkUrl: string) {
   if (typeof window === "undefined" || typeof window.gtag !== "function") return;

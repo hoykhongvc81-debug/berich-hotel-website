@@ -5,7 +5,8 @@ import LuxuryCursor from "@/components/LuxuryCursor";
 import BookingWidget from "@/components/BookingWidget";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
-import ConversionTracking, { GA4_ID } from "@/components/ConversionTracking";
+import ConversionTracking from "@/components/ConversionTracking";
+import { GA4_ID } from "@/lib/tracking";
 
 // Berich Hotel's own Google tags (owned by the hotel, not the agency)
 const GOOGLE_ADS_TAG_ID = "GTM-WRF5RCF5";
